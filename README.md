@@ -103,7 +103,7 @@ This document represents some lessons learned from developing software in an env
 
 - **Always**, even on quick hacks. The initial investment is negligible with Git
 - The only way to validate that everything is properly in revision control is to clear out the working directory, do a full clone from revision control, and perform a build
-  - Don't remove your working copy for this, just compress it - that way if you've forgotten to check in critical files you still have tyhem
+  - Don't remove your working copy for this, just compress it - that way if you've forgotten to check in critical files you still have them
 - Processor power is cheap, consider setting up a clean virtual machine so that you can verify the dependencies specified are truly the only dependencies needed to build
 - Branches should include some sort indication (perhaps a document in the root of the branch) describing who made it, why it was made, and its expected lifetime (i.e. think about running across the branch in a year - will you know what it's there for or if it's safe to delete?)
 - Establish and follow best practices for including documentation in the source tree (e.g. GitHub/Visual Studio Online standard of a root level `README.md`)
