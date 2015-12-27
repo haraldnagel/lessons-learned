@@ -21,7 +21,7 @@ This document represents some lessons learned from developing software in an env
   - Development database: `<product name>_dev` (or similar)
   - Test database: `<product_name>_test` (or similar)
   - Production database: `<product_name>`
-- Create and follow a database update process to ensure that updates are not clobbered
+- Create and follow a database update process to ensure that updates are not clobbered (e.g. do developers update scripts and submit to the DBA who pushes to a shared integration database?)
 - Put as much of the database stuff in revision control as possible (e.g. DDL scripts, code models, or a code-first approach)
 - Queries should probably have an `ORDER BY` clause, there are few business lists that shouldn’t be ordered by default
 - Data should be imported for test in ways which cause the IDs to be non-sequential in order to root out problems where things are sorted by ID or natural insert order
